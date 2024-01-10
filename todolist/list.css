@@ -1,0 +1,90 @@
+body{
+    background:black;
+    }
+
+.container{
+    border-radius: 20px;
+    padding:20px 20px;
+    margin: 80px auto 20px;
+    width:90%;
+    max-width: 480px;
+    background-color: white;
+}
+
+.intro{
+    display: flex;
+    align-items: start;
+}
+
+.intro img{
+    margin-bottom: 0px;
+    height: 40px;
+    padding : 20px;
+}
+
+.taskbar{
+    border-radius: 20px;
+    display:flex;
+    background: lightgray;
+}
+
+.taskbar input{
+    border:none;
+    background: transparent;
+    flex:1;
+    padding:10px;
+    border-radius: 20px;
+    outline: none;
+    
+}
+
+.taskbar button{
+    width:80px;
+    border:none;
+    border-radius:80px;
+    color:white;
+    font-size:15px;
+    background-color:orangered;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    position: relative;
+    user-select: none;
+    padding:6px 8px 5px 50px;
+}
+
+ul li::before{
+    content:'';
+    position: absolute;
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top:auto;
+    left:4px;
+}
+
+ul li span{
+    border-radius: 50px;
+    font-size: 25px;
+    right:0px;
+    top:5px;
+    left:380px;
+    cursor: pointer;
+    position: absolute;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    color: grey;
+}
+
+ul li.checked::before{
+    background-image:url(checked.png) ;
+}
+
